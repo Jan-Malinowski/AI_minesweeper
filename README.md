@@ -14,8 +14,8 @@ The AI aims to minimize the number of incorrect moves while maximizing successfu
 ✅ Auto-restart & Training Mode – The AI continuously plays, improving with each game.<br>
 
 🏗️ How It Works<br>
-Game Environment –&emsp;A standard Minesweeper grid is created using Pygame.<br>
-AI Decision Making –&emsp;The AI selects moves randomly at first, then refines its choices using Q-learning.<br>
+Game Environment – A standard Minesweeper grid is created using Pygame.<br>
+AI Decision Making – The AI selects moves randomly at first, then refines its choices using Q-learning.<br>
 Rewards & Punishments:<br>
 &emsp;✅ +10 for revealing a safe cell<br>
 &emsp;✅ +50 for correctly flagging a mine<br>
@@ -23,7 +23,7 @@ Rewards & Punishments:<br>
 Q-Table Updates – The AI updates its Q-table after every move using:<br>
  &emsp;Q(s,a)=Q(s,a)+α×(r+γ×maxQ(s′, a′)−Q(s,a))<br>
  &emsp;where α is the learning rate, γ is the discount factor, and r is the reward.<br>
-Learning Over Time –&emsp;The AI starts exploring the grid but gradually learns optimal moves by adjusting the exploration rate (ε).<br>
+Learning Over Time – The AI starts exploring the grid but gradually learns optimal moves by adjusting the exploration rate (ε).<br>
 <br>
 🏆First victory after 51000 attempts<br><br>
 <img width="604" alt="Screenshot 2025-03-14 at 19 23 53" src="https://github.com/user-attachments/assets/77429278-b1bf-42e7-9d12-cced75ad7174" />
